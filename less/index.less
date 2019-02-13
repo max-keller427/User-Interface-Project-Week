@@ -108,6 +108,7 @@ section {
 }
 body {
   line-height: 1;
+  background-color: black;
 }
 ol,
 ul {
@@ -163,6 +164,7 @@ img {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+  background-color: white;
 }
 // NAV //////////////////////////
 
@@ -189,10 +191,47 @@ nav {
 header {
   height: 598px;
   background-image: url("../img/home/home-jumbotron.png");
+  margin-bottom: 3rem;
   h2 {
     color: white;
     font-size: 4rem;
     display: flex;
     align-items: flex-end;
+    height: 598px;
+    font-weight: bold;
+    padding: 4rem;
+    line-height: 75px;
+  }
+}
+
+.smith {
+  display: flex;
+  margin: 0 3rem 3rem 2rem;
+  div {
+    flex-direction: column;
+    padding: 3rem 0rem 3rem 2rem;
+    width: 50%;
+    h2 {
+      display: flex;
+      font-weight: bold;
+      font-size: 28px;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 16px;
+      line-height: 25px;
+      width: 75%;
+      margin-bottom: 1rem;
+      margin-right: 0rem;
+    }
+    button {
+      background-color: white;
+      height: 25%;
+      width: 25%;
+      border: 1px solid black;
+    }
+    img {
+      margin-right: 1rem;
+    }
   }
 }
