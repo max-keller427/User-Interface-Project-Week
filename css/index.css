@@ -193,13 +193,12 @@ header h2 {
 }
 .smith {
   display: flex;
-  justify-content: space-evenly;
-  margin: 0 3rem 6rem 2rem;
+  padding: 3rem;
 }
 .smith div {
   flex-direction: column;
   padding: 3rem 0rem 3rem 0rem;
-  width: 45%;
+  width: 50%;
 }
 .smith div h2 {
   display: flex;
@@ -210,27 +209,26 @@ header h2 {
 .smith div p {
   font-size: 16px;
   line-height: 25px;
-  width: 97%;
+  width: 90%;
   margin-bottom: 1rem;
 }
 .smith div button {
   background-color: white;
   height: 25%;
-  width: 25%;
+  width: 30%;
   border: 1px solid black;
 }
 .smith div img {
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .futuristic {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  padding: 3rem;
 }
 .futuristic div {
   flex-direction: column;
   padding: 3rem 0rem 3rem 3rem;
-  width: 50%;
 }
 .futuristic div h2 {
   display: flex;
@@ -243,10 +241,11 @@ header h2 {
   line-height: 25px;
   width: 95%;
   margin-bottom: 1rem;
+  padding-right: 1rem;
 }
 .futuristic div button {
   background-color: white;
   height: 25%;
-  width: 25%;
+  width: 30%;
   border: 1px solid black;
 }
