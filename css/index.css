@@ -249,3 +249,20 @@ header h2 {
   width: 30%;
   border: 1px solid black;
 }
+.recent-projects {
+  padding: 3rem;
+}
+.villas {
+  display: flex;
+  flex-direction: column;
+}
+.villas button {
+  display: flex;
+}
+.villas div {
+  background-image: url("../img/home/home-mobile-villas-img.png");
+  background-size: 855px 230px;
+  background-repeat: no-repeat;
+  width: 855px;
+  height: 230px;
+}
