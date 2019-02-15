@@ -293,9 +293,6 @@ header h2 {
   display: flex;
   flex-direction: column;
 }
-.outskirts h2 {
-  margin-bottom: 2rem;
-}
 .outskirts div {
   background-image: url("../img/home/home-outskirts-img.png");
   width: 855px;
@@ -305,7 +302,7 @@ header h2 {
   display: flex;
   border: 1px solid white;
   margin-top: 21%;
-  margin-left: 62.5%;
+  margin-left: 0%;
   width: 38%;
   height: 40%;
   justify-content: center;
