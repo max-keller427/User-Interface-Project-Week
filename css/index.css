@@ -135,6 +135,10 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
+.h2-mixin {
+  font-weight: bold;
+  font-size: 28px;
+}
 * {
   box-sizing: border-box;
 }
@@ -181,6 +185,12 @@ header {
   background-image: url("../img/home/home-jumbotron.png");
   margin-bottom: 3rem;
 }
+@media (max-width: 500px) {
+  header {
+    background-image: url("../img/home/home-mobile-jumbotron.png");
+    background-size: cover;
+  }
+}
 header h2 {
   color: white;
   font-size: 4rem;
@@ -190,6 +200,11 @@ header h2 {
   font-weight: bold;
   padding: 4rem;
   line-height: 75px;
+}
+@media (max-width: 500px) {
+  header h2 {
+    height: 300px;
+  }
 }
 .smith {
   display: flex;
@@ -221,6 +236,37 @@ header h2 {
 .smith div img {
   margin-left: 1rem;
 }
+.smith .mobile-img {
+  display: none;
+}
+@media (max-width: 500px) {
+  .smith {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .smith .mobile-img {
+    display: flex;
+    order: -1;
+  }
+  .smith .desktop-img {
+    display: none;
+  }
+  .smith div {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+  .smith div h2 {
+    width: 100%;
+  }
+  .smith div p {
+    width: 100%;
+  }
+  .smith div button {
+    width: 100%;
+    padding: 5%;
+  }
+}
 .futuristic {
   display: flex;
   flex-direction: row-reverse;
@@ -249,8 +295,40 @@ header h2 {
   width: 30%;
   border: 1px solid black;
 }
+@media (max-width: 500px) {
+  .futuristic {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .futuristic .mobile-img {
+    display: flex;
+    order: -1;
+  }
+  .futuristic .desktop-img {
+    display: none;
+  }
+  .futuristic div {
+    width: 100%;
+    padding: 2rem 0rem 0rem 0rem;
+  }
+  .futuristic div h2 {
+    width: 100%;
+  }
+  .futuristic div p {
+    width: 100%;
+  }
+  .futuristic div button {
+    width: 100%;
+    padding: 5%;
+  }
+}
 .recent-projects {
   padding: 3rem;
+}
+@media (max-width: 500px) {
+  .recent-projects {
+    padding: 1rem;
+  }
 }
 .villas {
   display: flex;
@@ -289,6 +367,27 @@ header h2 {
   margin-bottom: 2rem;
   font-size: 1.2rem;
 }
+@media (max-width: 500px) {
+  .villas div {
+    background-image: url("../img/home/home-mobile-villas-img.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    margin-left: 4rem;
+  }
+  .villas div button {
+    width: 64%;
+    padding: 2rem;
+    margin-top: 41%;
+    margin-left: 3.5%;
+  }
+  .villas article {
+    margin-top: 2rem;
+  }
+  .villas article p {
+    width: 100%;
+  }
+}
 .outskirts {
   display: flex;
   flex-direction: column;
@@ -323,6 +422,27 @@ header h2 {
   margin-bottom: 2rem;
   font-size: 1.2rem;
 }
+@media (max-width: 500px) {
+  .outskirts div {
+    background-image: url("../img/home/home-mobile-outskirts-img.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    margin-left: 4rem;
+  }
+  .outskirts div button {
+    width: 64%;
+    padding: 2rem;
+    margin-top: 41%;
+    margin-left: 3.5%;
+  }
+  .outskirts article {
+    margin-top: 2rem;
+  }
+  .outskirts article p {
+    width: 100%;
+  }
+}
 .blocks {
   display: flex;
   flex-direction: column;
@@ -356,6 +476,27 @@ header h2 {
   width: 52%;
   margin-bottom: 2rem;
   font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .blocks div {
+    background-image: url("../img/home/home-mobile-the-blocks-img.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    margin-left: 4rem;
+  }
+  .blocks div button {
+    width: 64%;
+    padding: 2rem;
+    margin-top: 41%;
+    margin-left: 3.5%;
+  }
+  .blocks article {
+    margin-top: 2rem;
+  }
+  .blocks article p {
+    width: 100%;
+  }
 }
 footer {
   background-color: #97a9b6;
