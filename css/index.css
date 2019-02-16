@@ -188,7 +188,8 @@ header {
 @media (max-width: 500px) {
   header {
     background-image: url("../img/home/home-mobile-jumbotron.png");
-    background-size: cover;
+    background-size: auto;
+    background-repeat: no-repeat;
   }
 }
 header h2 {
