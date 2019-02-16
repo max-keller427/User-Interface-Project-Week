@@ -167,6 +167,8 @@ nav {
   justify-content: space-between;
   background-color: #97a9b6;
   padding: 1rem;
+  position: fixed;
+  top: 0;
 }
 nav .nav-links {
   display: none;
@@ -179,6 +181,9 @@ nav h1 {
 }
 nav img {
   padding-right: 3rem;
+}
+nav a {
+  text-decoration: none;
 }
 header {
   height: 598px;

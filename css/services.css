@@ -166,6 +166,8 @@ nav {
   justify-content: space-between;
   background-color: #97a9b6;
   padding: 1rem;
+  position: fixed;
+  top: 0;
 }
 nav .nav-links {
   display: none;
@@ -175,6 +177,9 @@ nav h1 {
   padding-left: 3rem;
   font-weight: Bold;
   font-size: 24px;
+}
+nav a {
+  text-decoration: none;
 }
 nav img {
   padding-right: 3rem;
@@ -219,7 +224,7 @@ header h1 {
   padding-bottom: 1rem;
 }
 .section-container .tabs-content div p {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   width: 85%;
 }
 footer {
