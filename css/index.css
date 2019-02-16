@@ -547,6 +547,19 @@ footer .locations section p {
 footer .locations section h3 {
   padding-bottom: 0.6rem;
 }
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  footer .locations {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .locations section {
+    margin-left: 0;
+  }
+}
 #copyright {
   display: flex;
   justify-content: center;
@@ -554,4 +567,10 @@ footer .locations section h3 {
   color: white;
   background-color: #97a9b6;
   padding-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  #copyright {
+    justify-content: flex-start;
+    padding-left: 1rem;
+  }
 }

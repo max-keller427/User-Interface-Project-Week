@@ -196,12 +196,12 @@ nav {
 header {
   height: 598px;
   background-image: url("../img/home/home-jumbotron.png");
+  margin-bottom: 3rem;
   @media (@mobile) {
     background-image: url("../img/home/home-mobile-jumbotron.png");
     background-size: cover;
     // background-repeat: no-repeat;
   }
-  margin-bottom: 3rem;
   h2 {
     color: white;
     font-size: 4rem;
@@ -563,6 +563,17 @@ footer {
       }
     }
   }
+  @media (@mobile) {
+    flex-direction: column;
+    padding: 1rem;
+    .locations {
+      flex-direction: column;
+      align-items: flex-start;
+      section {
+        margin-left: 0;
+      }
+    }
+  }
 }
 #copyright {
   display: flex;
@@ -571,4 +582,8 @@ footer {
   color: white;
   background-color: #97a9b6;
   padding-bottom: 1rem;
+  @media (@mobile) {
+    justify-content: flex-start;
+    padding-left: 1rem;
+  }
 }
