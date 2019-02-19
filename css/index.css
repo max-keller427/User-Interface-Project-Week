@@ -168,6 +168,7 @@ nav {
   background-color: #97a9b6;
   padding: 1rem;
   position: fixed;
+  z-index: 1;
   top: 0;
 }
 nav .nav-links {
@@ -211,8 +212,10 @@ header h2 {
 }
 @media (max-width: 500px) {
   header h2 {
-    height: 300px;
     position: absolute;
+    font-size: 3rem;
+    line-height: 60px;
+    padding: 0;
     bottom: 20px;
     left: 20px;
   }
@@ -388,19 +391,19 @@ header h2 {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: auto;
   }
   .villas div button {
     width: 64%;
     padding: 2rem;
-    margin-top: 41%;
-    margin-left: 3.5%;
+    left: 18.5%;
   }
   .villas article {
     margin-top: 2rem;
   }
   .villas article p {
     width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0;
   }
 }
 .outskirts {
@@ -439,24 +442,27 @@ header h2 {
   font-size: 1.2rem;
 }
 @media (max-width: 500px) {
+  .outskirts {
+    margin-top: 2rem;
+  }
   .outskirts div {
     background-image: url("../img/home/home-mobile-outskirts-img.png");
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: auto;
-    margin-left: 4rem;
   }
   .outskirts div button {
     width: 64%;
     padding: 2rem;
-    margin-top: 41%;
-    margin-left: 3.5%;
+    left: 18.5%;
   }
   .outskirts article {
     margin-top: 2rem;
   }
   .outskirts article p {
     width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0;
   }
 }
 .blocks {
@@ -495,24 +501,27 @@ header h2 {
   font-size: 1.2rem;
 }
 @media (max-width: 500px) {
+  .blocks {
+    margin-top: 2rem;
+  }
   .blocks div {
     background-image: url("../img/home/home-mobile-the-blocks-img.png");
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: auto;
-    margin-left: 4rem;
   }
   .blocks div button {
     width: 64%;
     padding: 2rem;
-    margin-top: 41%;
-    margin-left: 3.5%;
+    left: 18.5%;
   }
   .blocks article {
     margin-top: 2rem;
   }
   .blocks article p {
     width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0;
   }
 }
 footer {
@@ -568,6 +577,7 @@ footer .locations section h3 {
   footer {
     flex-direction: column;
     padding: 1rem;
+    margin-top: 2rem;
   }
   footer .locations {
     flex-direction: column;
