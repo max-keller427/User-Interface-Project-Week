@@ -193,8 +193,10 @@ header {
 @media (max-width: 500px) {
   header {
     background-image: url("../img/home/home-mobile-jumbotron.png");
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
+    height: 374px;
+    position: relative;
   }
 }
 header h2 {
@@ -210,6 +212,9 @@ header h2 {
 @media (max-width: 500px) {
   header h2 {
     height: 300px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
   }
 }
 .smith {
@@ -301,6 +306,9 @@ header h2 {
   width: 30%;
   border: 1px solid black;
 }
+.futuristic .mobile-img {
+  display: none;
+}
 @media (max-width: 500px) {
   .futuristic {
     flex-direction: column;
@@ -345,14 +353,15 @@ header h2 {
 }
 .villas div {
   background-image: url("../img/home/home-villas-img.png");
-  width: 855px;
+  width: 92%;
   height: 230px;
 }
 .villas div button {
   display: flex;
+  position: relative;
+  top: 75%;
+  left: 62.5%;
   border: 1px solid white;
-  margin-top: 21%;
-  margin-left: 62.5%;
   width: 38%;
   height: 40%;
   justify-content: center;
@@ -377,9 +386,9 @@ header h2 {
   .villas div {
     background-image: url("../img/home/home-mobile-villas-img.png");
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: auto;
-    margin-left: 4rem;
   }
   .villas div button {
     width: 64%;
@@ -400,14 +409,15 @@ header h2 {
 }
 .outskirts div {
   background-image: url("../img/home/home-outskirts-img.png");
-  width: 855px;
+  width: 92%;
   height: 230px;
 }
 .outskirts div button {
   display: flex;
+  position: relative;
+  top: 75%;
+  left: 0%;
   border: 1px solid white;
-  margin-top: 21%;
-  margin-left: 0%;
   width: 38%;
   height: 40%;
   justify-content: center;
@@ -455,14 +465,15 @@ header h2 {
 }
 .blocks div {
   background-image: url("../img/home/home-the-blocks-img.png");
-  width: 855px;
+  width: 92%;
   height: 230px;
 }
 .blocks div button {
   display: flex;
+  position: relative;
+  top: 75%;
+  left: 62.5%;
   border: 1px solid white;
-  margin-top: 21%;
-  margin-left: 62.5%;
   width: 38%;
   height: 40%;
   justify-content: center;
