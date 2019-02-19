@@ -167,14 +167,11 @@ img {
   width: 100%;
   margin: 0 auto;
   background-color: white;
-  // @media (@mobile) {
-  //  width: 90%;
-  // }
 }
 // NAV //////////////////////////
 
 nav {
-  width: 53.8%;
+  width: 1024px;
   display: flex;
   justify-content: space-between;
   background-color: #97a9b6;
@@ -184,6 +181,8 @@ nav {
   top: 0;
   .nav-links {
     display: none;
+    height: 937px;
+    width: 100%;
   }
   h1 {
     color: white;
@@ -196,6 +195,9 @@ nav {
   }
   a {
     text-decoration: none;
+  }
+  @media (max-width: 1024px) {
+    width: 100%;
   }
   @media (@mobile) {
     width: 100%;
