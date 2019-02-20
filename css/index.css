@@ -177,8 +177,14 @@ nav h1 {
   font-weight: Bold;
   font-size: 24px;
 }
-nav img {
+nav button {
   padding-right: 3rem;
+  background-color: #97a9b6;
+  border: none;
+  cursor: pointer;
+}
+nav button:focus {
+  outline: 0;
 }
 nav a {
   text-decoration: none;
@@ -196,6 +202,7 @@ nav a {
 .nav-links {
   position: fixed;
   top: 55px;
+  left: 432px;
   background-color: #97a9b6;
   z-index: 1;
   width: 1024px;
@@ -215,6 +222,9 @@ nav a {
 }
 .nav-links a:hover {
   color: gray;
+}
+.nav-links-hidden {
+  display: none;
 }
 header {
   height: 598px;

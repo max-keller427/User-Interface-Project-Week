@@ -185,8 +185,14 @@ nav {
     font-weight: Bold;
     font-size: 24px;
   }
-  img {
+  button {
     padding-right: 3rem;
+    background-color: #97a9b6;
+    border: none;
+    cursor: pointer;
+  }
+  button:focus {
+    outline: 0;
   }
   a {
     text-decoration: none;
@@ -201,6 +207,7 @@ nav {
 .nav-links {
   position: fixed;
   top: 55px;
+  left: 432px;
   background-color: #97a9b6;
   z-index: 1;
   width: 1024px;
@@ -221,9 +228,9 @@ nav {
     color: gray;
   }
 }
-// .nav-links-hidden {
-//   display: none;
-// }
+.nav-links-hidden {
+  display: none;
+}
 
 header {
   height: 598px;
