@@ -207,7 +207,7 @@ nav {
 .nav-links {
   position: fixed;
   top: 55px;
-  left: 432px;
+  left: 440px;
   background-color: #97a9b6;
   z-index: 1;
   width: 1024px;
@@ -226,6 +226,11 @@ nav {
   }
   a:hover {
     color: gray;
+  }
+  @media (@mobile) {
+    width: 100%;
+    left: 0;
+    padding-top: 10rem;
   }
 }
 .nav-links-hidden {

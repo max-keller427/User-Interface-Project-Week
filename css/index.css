@@ -202,7 +202,7 @@ nav a {
 .nav-links {
   position: fixed;
   top: 55px;
-  left: 432px;
+  left: 440px;
   background-color: #97a9b6;
   z-index: 1;
   width: 1024px;
@@ -222,6 +222,13 @@ nav a {
 }
 .nav-links a:hover {
   color: gray;
+}
+@media (max-width: 500px) {
+  .nav-links {
+    width: 100%;
+    left: 0;
+    padding-top: 10rem;
+  }
 }
 .nav-links-hidden {
   display: none;
