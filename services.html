@@ -15,15 +15,18 @@
 
   <body>
     <div class="container">
-      <nav>
+      <nav class="dropdown">
         <div>
           <a href="index.html"> <h1>S&J</h1> </a>
         </div>
-        <a href="#"><img src="img/nav-hamburger.png"/></a>
-        <div class="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
+        <button class="dropdown-button">
+          <img class="hamburger x-img" src="img/nav-hamburger.png" />
+        </button>
+
+        <div class="nav-links nav-links-hidden">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="#" class="nav-link">Contact</a>
         </div>
       </nav>
       <header class="services-header">
@@ -38,14 +41,39 @@
           service.
         </article>
         <!-- *** NOTE *** Tab Navigator Content: I used the same text for each tab to make it easy, Note that the images and text do change on click but you can just use the same text for each tab element.  All the images should be in the img folder. -->
-        <section>
-          <button>Pre-Construction</button>
-          <button>Construction</button>
-          <button>Design Build</button>
-          <button>Sustainability</button>
+        <section class="tabs-links">
+          <button class="tabs-link tabs-link-selected" data-tab="1">
+            Pre-Construction
+          </button>
+          <button class="tabs-link" data-tab="2">Construction</button>
+          <button class="tabs-link" data-tab="3">Design Build</button>
+          <button class="tabs-link" data-tab="4">Sustainability</button>
         </section>
         <section class="tabs-content">
-          <div>
+          <div class="tabs-item tabs-item-selected" data-tab="1">
+            <div class="content">
+              <h2>Pre-Construction</h2>
+              <p>
+                Completely synergize resource taxing relationships via premier
+                niche markets. Professionally cultivate one-to-one customer
+                service with robust ideas. Dynamically innovate
+                resource-leveling customer service for state of the art customer
+                service.
+              </p>
+              <p>
+                Phosfluorescently engage worldwide methodologies with
+                web-enabled technology. Interactively coordinate proactive
+                e-commerce via process-centric "outside the box" thinking.
+                Completely pursue scalable customer service through sustainable
+                potentialities.
+              </p>
+            </div>
+            <div class="tabs-item-img">
+              <img src="img/services/services-tab-pre-construction-img.png" />
+            </div>
+          </div>
+
+          <div class="tabs-item" data-tab="2">
             <h2>Construction</h2>
             <p>
               Completely synergize resource taxing relationships via premier
@@ -59,8 +87,47 @@
               process-centric "outside the box" thinking. Completely pursue
               scalable customer service through sustainable potentialities.
             </p>
+            <div class="tabs-item-img">
+              <img src="img/services/services-tab-construction-img.png" />
+            </div>
           </div>
-          <img src="img/services/services-tab-construction-img.png" />
+
+          <div class="tabs-item" data-tab="3">
+            <h2>Design Build</h2>
+            <p>
+              Completely synergize resource taxing relationships via premier
+              niche markets. Professionally cultivate one-to-one customer
+              service with robust ideas. Dynamically innovate resource-leveling
+              customer service for state of the art customer service.
+            </p>
+            <p>
+              Phosfluorescently engage worldwide methodologies with web-enabled
+              technology. Interactively coordinate proactive e-commerce via
+              process-centric "outside the box" thinking. Completely pursue
+              scalable customer service through sustainable potentialities.
+            </p>
+            <div class="tabs-item-img">
+              <img src="img/services/services-tab-design-build-img.png" />
+            </div>
+          </div>
+          <div class="tabs-item" data-tab="4">
+            <h2>Sustainability</h2>
+            <p>
+              Completely synergize resource taxing relationships via premier
+              niche markets. Professionally cultivate one-to-one customer
+              service with robust ideas. Dynamically innovate resource-leveling
+              customer service for state of the art customer service.
+            </p>
+            <p>
+              Phosfluorescently engage worldwide methodologies with web-enabled
+              technology. Interactively coordinate proactive e-commerce via
+              process-centric "outside the box" thinking. Completely pursue
+              scalable customer service through sustainable potentialities.
+            </p>
+            <div class="tabs-item-img">
+              <img src="img/services/services-tab-sustainability-img.png" />
+            </div>
+          </div>
         </section>
       </section>
       <footer>

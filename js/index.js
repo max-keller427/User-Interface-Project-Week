@@ -1,5 +1,5 @@
 // JS goes here
-
+// Dropdown Nav Bar ////////////////////////////////
 class Dropdown {
   constructor(element) {
     this.element = element;
@@ -17,3 +17,12 @@ class Dropdown {
 let dropDowns = document
   .querySelectorAll(".dropdown")
   .forEach(link => new Dropdown(link));
+
+const changeImg = function() {
+  button.src = "..img/nav-hamburger-close.png";
+};
+
+let button = document.querySelector(".dropdown-button");
+button.addEventListener("click", changeImg());
+
+// Tabs Services ////////////////////////////////
