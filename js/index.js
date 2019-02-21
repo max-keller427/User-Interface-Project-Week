@@ -18,12 +18,17 @@ let dropDowns = document
   .querySelectorAll(".dropdown")
   .forEach(link => new Dropdown(link));
 
+// button change //////////////////////////////////
 const changeImg = function() {
-  button.src = "..img/nav-hamburger-close.png";
+  const buttonOpen = document.querySelector(".hamburger");
+  if (buttonOpen.src === "http://127.0.0.1:5500/img/nav-hamburger.png") {
+    buttonOpen.src = "http://127.0.0.1:5500/img/nav-hamburger-close.png";
+  } else {
+    buttonOpen.src = "http://127.0.0.1:5500/img/nav-hamburger.png";
+  }
 };
 
-let button = document.querySelector(".dropdown-button");
-button.addEventListener("click", changeImg());
+document.querySelector(".hamburger").addEventListener("click", changeImg);
 
 // Tabs Services ////////////////////////////////
 class TabLink {
