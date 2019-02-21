@@ -262,6 +262,7 @@ header h1 {
   background: white;
   font-weight: bold;
   font-size: 1rem;
+  cursor: pointer;
 }
 .section-container section button:hover {
   background-color: #222222;
