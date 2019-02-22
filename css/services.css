@@ -245,11 +245,35 @@ header h1 {
   padding-left: 5rem;
   line-height: 75px;
 }
+@media (max-width: 500px) {
+  header {
+    background-image: url(../img/services/services-mobile-jumbotron.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 374px;
+    position: relative;
+  }
+  header h1 {
+    padding-left: 1rem;
+    padding-top: 16rem;
+  }
+}
 .section-container {
   padding: 4rem;
 }
+@media (max-width: 500px) {
+  .section-container {
+    padding: 2rem;
+  }
+}
 .section-container article {
   margin-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  .section-container article {
+    line-height: 28px;
+    margin-bottom: 0;
+  }
 }
 .section-container section {
   display: flex;
@@ -276,6 +300,15 @@ header h1 {
 .section-container section button:focus {
   outline: 0;
 }
+@media (max-width: 500px) {
+  .section-container section {
+    flex-direction: column;
+  }
+  .section-container section button {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
 .section-container .tabs-content {
   padding-top: 3rem;
   flex-direction: row;
@@ -296,6 +329,18 @@ header h1 {
 .section-container .tabs-content .tabs-item-img {
   width: 100%;
   padding-top: 2rem;
+}
+@media (max-width: 500px) {
+  .section-container .tabs-content {
+    padding-top: 3rem;
+  }
+  .section-container .tabs-content .tabs-item {
+    flex-direction: column;
+  }
+  .section-container .tabs-content .tabs-item-img {
+    padding-top: 0;
+    display: flex;
+  }
 }
 .section-container .tabs-item {
   display: none;
@@ -329,6 +374,11 @@ footer .input input {
   border-radius: 4px;
   border: none;
   color: #97a9b6;
+}
+@media (max-width: 500px) {
+  footer .input input {
+    width: 93%;
+  }
 }
 footer .input p {
   padding-top: 0.5rem;
