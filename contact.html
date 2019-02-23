@@ -36,15 +36,16 @@
       <div class="page-content">
         <div class="input-content">
           <h2>Get In Touch</h2>
+          <div class="email">
+            <h3>Email Address</h3>
+            <input id="email" type="text" name="text" value="Enter Email" />
 
-          <p>Email Address</p>
-          <input type="text" name="text" value="Enter Email" />
+            <p>We'll never share your email with anyone else.</p>
+          </div>
 
-          <p>We'll never share your email with anyone else.</p>
+          <h3>How many buildings do you need planned?</h3>
 
-          <p>How many buildings do you need planned?</p>
-
-          <select name="numbers">
+          <select id="number" name="numbers">
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -52,9 +53,9 @@
             <option>5</option>
           </select>
 
-          Provide a brief overview of your project needs:
-          <input type="text" name="text" value="" />
-          I am a small business I am a residential owner I am a corporation
+          <h3>Provide a brief overview of your project needs:</h3>
+          <input id="text" type="text" name="text" value="" />
+
           <form action="/action_page.php">
             <input type="radio" name="gender" value="male" checked /> I am a
             small business <br />
@@ -64,9 +65,11 @@
             corporation<br /><br />
             <input type="submit" />
           </form>
-          <li></li>
         </div>
         <div class="where-we-work">
+          <h2>
+            Where We Work
+          </h2>
           <section>
             <h3>New York</h3>
 
