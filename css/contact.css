@@ -283,6 +283,10 @@ header h1 {
   border-radius: 4px;
   margin-bottom: 1rem;
 }
+.input-content #text {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
 .where-we-work h2 {
   font-size: 1.6rem;
   font-weight: bold;
