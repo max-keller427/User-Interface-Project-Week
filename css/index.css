@@ -1,1 +1,650 @@
-/* Should be empty until you compile your LESS */
+/*------------------------------------*\
+RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0b1 | 201101
+NOTE:WORK IN PROGRESS
+USE WITH CAUTION AND TEST WITH ABANDON */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: black;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Your Code Goes Here */
+.h2-mixin {
+  font-weight: bold;
+  font-size: 28px;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto", Arial, sans-serif;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 2rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+nav {
+  width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #97a9b6;
+  padding: 1rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+nav h1 {
+  color: white;
+  padding-left: 3rem;
+  font-weight: Bold;
+  font-size: 24px;
+}
+nav button {
+  padding-right: 3rem;
+  background-color: #97a9b6;
+  border: none;
+  cursor: pointer;
+}
+nav button:focus {
+  outline: 0;
+}
+nav a {
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  nav {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+  }
+}
+.nav-links {
+  position: fixed;
+  top: 55px;
+  left: 440px;
+  background-color: #97a9b6;
+  z-index: 1;
+  width: 1024px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+  font-size: 64px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: start;
+}
+.nav-links a:hover {
+  color: gray;
+}
+@media (max-width: 500px) {
+  .nav-links {
+    width: 100%;
+    left: 0;
+    padding-top: 10rem;
+  }
+}
+.nav-links-hidden {
+  display: none;
+}
+header {
+  height: 598px;
+  background-image: url("../img/home/home-jumbotron.png");
+  margin-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  header {
+    background-image: url("../img/home/home-mobile-jumbotron.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 374px;
+    position: relative;
+  }
+}
+header h2 {
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  align-items: flex-end;
+  height: 598px;
+  font-weight: bold;
+  padding: 4rem;
+  line-height: 75px;
+}
+@media (max-width: 500px) {
+  header h2 {
+    position: absolute;
+    font-size: 3rem;
+    line-height: 60px;
+    padding: 0;
+    bottom: 20px;
+    left: 20px;
+  }
+}
+.smith {
+  display: flex;
+  padding: 3rem;
+}
+.smith div {
+  flex-direction: column;
+  padding: 3rem 0rem 3rem 0rem;
+  width: 50%;
+}
+.smith div h2 {
+  display: flex;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 1rem;
+}
+.smith div p {
+  font-size: 16px;
+  line-height: 25px;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+.smith div button {
+  background-color: white;
+  height: 25%;
+  width: 30%;
+  border: 1px solid black;
+}
+.smith div img {
+  margin-left: 1rem;
+}
+.smith .mobile-img {
+  display: none;
+}
+@media (max-width: 500px) {
+  .smith {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .smith .mobile-img {
+    display: flex;
+    order: -1;
+  }
+  .smith .desktop-img {
+    display: none;
+  }
+  .smith div {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+  .smith div h2 {
+    width: 100%;
+  }
+  .smith div p {
+    width: 100%;
+  }
+  .smith div button {
+    width: 100%;
+    padding: 5%;
+  }
+}
+.futuristic {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 3rem;
+}
+.futuristic div {
+  flex-direction: column;
+  padding: 3rem 0rem 3rem 3rem;
+}
+.futuristic div h2 {
+  display: flex;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 1rem;
+}
+.futuristic div p {
+  font-size: 16px;
+  line-height: 25px;
+  width: 95%;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+}
+.futuristic div button {
+  background-color: white;
+  height: 25%;
+  width: 30%;
+  border: 1px solid black;
+}
+.futuristic .mobile-img {
+  display: none;
+}
+@media (max-width: 500px) {
+  .futuristic {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .futuristic .mobile-img {
+    display: flex;
+    order: -1;
+  }
+  .futuristic .desktop-img {
+    display: none;
+  }
+  .futuristic div {
+    width: 100%;
+    padding: 2rem 0rem 0rem 0rem;
+  }
+  .futuristic div h2 {
+    width: 100%;
+  }
+  .futuristic div p {
+    width: 100%;
+  }
+  .futuristic div button {
+    width: 100%;
+    padding: 5%;
+  }
+}
+.recent-projects {
+  padding: 3rem;
+}
+@media (max-width: 500px) {
+  .recent-projects {
+    padding: 1rem;
+  }
+}
+.villas {
+  display: flex;
+  flex-direction: column;
+}
+.villas h2 {
+  margin-bottom: 2rem;
+}
+.villas div {
+  background-image: url("../img/home/home-villas-img.png");
+  width: 92%;
+  height: 230px;
+}
+.villas div button {
+  display: flex;
+  position: relative;
+  top: 75%;
+  left: 62.5%;
+  border: 1px solid white;
+  width: 38%;
+  height: 40%;
+  justify-content: center;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.villas article {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 5rem;
+  align-items: center;
+  width: 100%;
+}
+.villas p {
+  width: 50%;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .villas div {
+    background-image: url("../img/home/home-mobile-villas-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  .villas div button {
+    width: 64%;
+    padding: 2rem;
+    left: 18.5%;
+  }
+  .villas article {
+    margin-top: 2rem;
+  }
+  .villas article p {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+}
+.outskirts {
+  display: flex;
+  flex-direction: column;
+}
+.outskirts div {
+  background-image: url("../img/home/home-outskirts-img.png");
+  width: 92%;
+  height: 230px;
+}
+.outskirts div button {
+  display: flex;
+  position: relative;
+  top: 75%;
+  left: 0%;
+  border: 1px solid white;
+  width: 38%;
+  height: 40%;
+  justify-content: center;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.outskirts article {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 5rem;
+  align-items: center;
+  width: 100%;
+}
+.outskirts p {
+  width: 51%;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .outskirts {
+    margin-top: 2rem;
+  }
+  .outskirts div {
+    background-image: url("../img/home/home-mobile-outskirts-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  .outskirts div button {
+    width: 64%;
+    padding: 2rem;
+    left: 18.5%;
+  }
+  .outskirts article {
+    margin-top: 2rem;
+  }
+  .outskirts article p {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+}
+.blocks {
+  display: flex;
+  flex-direction: column;
+}
+.blocks div {
+  background-image: url("../img/home/home-the-blocks-img.png");
+  width: 92%;
+  height: 230px;
+}
+.blocks div button {
+  display: flex;
+  position: relative;
+  top: 75%;
+  left: 62.5%;
+  border: 1px solid white;
+  width: 38%;
+  height: 40%;
+  justify-content: center;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.blocks article {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 5rem;
+  align-items: center;
+  width: 100%;
+}
+.blocks p {
+  width: 52%;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .blocks {
+    margin-top: 2rem;
+  }
+  .blocks div {
+    background-image: url("../img/home/home-mobile-the-blocks-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  .blocks div button {
+    width: 64%;
+    padding: 2rem;
+    left: 18.5%;
+  }
+  .blocks article {
+    margin-top: 2rem;
+  }
+  .blocks article p {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+}
+footer {
+  background-color: #97a9b6;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+footer h3 {
+  color: white;
+  font-size: 1.4rem;
+}
+footer .input {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  color: #97a9b6;
+}
+footer .input h3 {
+  padding-bottom: 1rem;
+}
+footer .input input {
+  display: flex;
+  width: 98%;
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: none;
+  color: #97a9b6;
+}
+footer .input p {
+  padding-top: 0.5rem;
+  font-size: 14px;
+  color: white;
+}
+footer .locations {
+  display: flex;
+  align-items: center;
+}
+footer .locations section {
+  flex-direction: column;
+  margin-left: 3rem;
+  line-height: 24px;
+  color: white;
+  padding-top: 1rem;
+}
+footer .locations section p {
+  font-size: 12px;
+}
+footer .locations section h3 {
+  padding-bottom: 0.6rem;
+}
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  footer .locations {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .locations section {
+    margin-left: 0;
+  }
+}
+#copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: white;
+  background-color: #97a9b6;
+  padding-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  #copyright {
+    justify-content: flex-start;
+    padding-left: 1rem;
+  }
+}
